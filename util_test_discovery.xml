@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<data-stream-collection xmlns:hpux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#hpux" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:freebsd-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#freebsd" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:x-win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#x-windows" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sce="http://open-scap.org/page/SCE_xccdf_stream" xmlns:solaris-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#solaris" xmlns:catos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#catos" xmlns:android-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#android" xmlns:iosxe-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#iosxe" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:cdf12="http://checklists.nist.gov/xccdf/1.2" xmlns:cpe2="http://cpe.mitre.org/language/2.0" xmlns:apache-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#apache" xmlns:junos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#junos" xmlns:cpe-dict-ext="http://scap.nist.gov/schema/cpe-extension/2.3" xmlns:esx-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#esx" xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:pixos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#pixos" xmlns:ocil="http://scap.nist.gov/schema/ocil/2.0" xmlns:aix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#aix" xmlns:win-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:sharepoint-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#sharepoint" xmlns:netconf-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#netconf" xmlns:ios-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#ios" xmlns="http://scap.nist.gov/schema/scap/source/1.2" xmlns:macos-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#macos" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:asa-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#asa" xmlns:cpe-dict="http://cpe.mitre.org/dictionary/2.0" xmlns:x-linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#x-linux" xmlns:x-net-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#x-protocols" xmlns:x-cmd-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#cmd" xmlns:apple-ios-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#apple_ios" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" id="scap_org.joval_collection_generated" schematron-version="1.0">
+   <data-stream id="scap_org.joval_datastream_generated" use-case="OTHER" scap-version="1.2" timestamp="2019-02-28T09:41:09.724-06:00">
+   <dictionaries>
+      <component-ref id="scap_org.joval_cref_generator-cpe-dictionary.xml" xlink:href="#scap_org.joval_comp_generator-cpe-dictionary.xml">
+        <cat:catalog>
+          <cat:uri name="generator-cpe-oval.xml" uri="#scap_org.joval_cref_generator-cpe-oval.xml"></cat:uri>
+        </cat:catalog>
+      </component-ref>
+    </dictionaries>
+    <checklists>
+      <component-ref id="scap_org.altx_cref_xccdf.xml" xlink:href="#scap_org.altx_comp_xccdf.xml">
+        <cat:catalog>
+           <cat:uri name="discovery.http.cve.oval.xml" uri="#scap_org.altx_cref_oval4.xml"></cat:uri>
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref id="scap_org.altx_cref_oval4.xml" xlink:href="#scap_org.altx_comp_oval4.xml"></component-ref>
+      <component-ref id="scap_org.joval_cref_generator-cpe-oval.xml" xlink:href="#scap_org.joval_comp_generator-cpe-oval.xml"></component-ref>
+     </checks>
+   </data-stream>
+ 	 <component id="scap_org.altx_comp_xccdf.xml" timestamp="2019-02-28T09:41:09.724-06:00">
+	     <cdf12:Benchmark id="xccdf_org.joval_benchmark_generated" style="SCAP_1.2">
+      <cdf12:status date="2019-02-28-06:00">draft</cdf12:status>
+      <cdf12:title>Benchmark generated on Thu Feb 28 09:41:09 CST 2019</cdf12:title>
+      <cdf12:version>0</cdf12:version>
+      <cdf12:model system="urn:xccdf:scoring:default"></cdf12:model>
+      <cdf12:Profile id="xccdf_org.joval_profile_all_rules">
+        <cdf12:title xml:lang="en-US">Select All Rules</cdf12:title>
+        <cdf12:select idref="xccdf_org.joval_group_discovery.http.cve.oval.xml" selected="true"></cdf12:select>
+            </cdf12:Profile>
+      <cdf12:Group id="xccdf_org.joval_group_discovery.http.cve.oval.xml" selected="false">
+    
+	 <cdf12:Rule id="xccdf_org.altx_rule_discovery.http.cve.oval.xml_1" selected="true">
+          <cdf12:title xml:lang="en-US">Vulnerability: CVE-2010-2791: Medium-Severity Vulnerability in Apache HTTP Server</cdf12:title>
+          <cdf12:platform idref="cpe:/o:undefined"></cdf12:platform>
+          <cdf12:ident system="http://cve.mitre.org">CVE-2010-2791</cdf12:ident>
+          <cdf12:ident system="https://cwe.mitre.org/data/definitions/200.html">CWE-200</cdf12:ident>
+          <cdf12:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <cdf12:check-content-ref href="discovery.http.cve.oval.xml" name="oval:com.altx.undefined.http.cve:def:2010279100000"></cdf12:check-content-ref>
+          </cdf12:check>
+		  </cdf12:Rule>
+		   <cdf12:Rule id="xccdf_org.altx_rule_discovery.http.cve.oval.xml_2" selected="true">
+          <cdf12:title xml:lang="en-US">Vulnerability: CVE-2014-3581: Medium-Severity Vulnerability in Apache HTTP Server</cdf12:title>
+          <cdf12:platform idref="cpe:/o:undefined"></cdf12:platform>
+          <cdf12:ident system="http://cve.mitre.org">CVE-2014-3581</cdf12:ident>
+          <cdf12:ident system="https://cwe.mitre.org/data/definitions/399.html">CWE-399</cdf12:ident>
+          <cdf12:ident system="https://httpd.apache.org/security/vulnerabilities_24.html">vulnerabilities_24</cdf12:ident>
+          <cdf12:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <cdf12:check-content-ref href="discovery.http.cve.oval.xml" name="oval:com.altx.undefined.http.cve:def:2014358100000"></cdf12:check-content-ref>
+          </cdf12:check>
+        </cdf12:Rule>
+		<cdf12:Rule id="xccdf_org.altx_rule_discovery.http.cve.oval.xml_3" selected="true">
+          <cdf12:title xml:lang="en-US">Vulnerability: CVE-2014-3523: Medium-Severity Vulnerability in Apache HTTP Server</cdf12:title>
+          <cdf12:platform idref="cpe:/o:undefined"></cdf12:platform>
+          <cdf12:ident system="http://cve.mitre.org">CVE-2014-3523</cdf12:ident>
+          <cdf12:ident system="https://cwe.mitre.org/data/definitions/399.html">CWE-399</cdf12:ident>
+          <cdf12:ident system="https://httpd.apache.org/security/vulnerabilities_24.html">vulnerabilities_24</cdf12:ident>
+          <cdf12:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <cdf12:check-content-ref href="discovery.http.cve.oval.xml" name="oval:com.altx.undefined.http.cve:def:2014352300000"></cdf12:check-content-ref>
+          </cdf12:check>
+        </cdf12:Rule>
+		<cdf12:Rule id="xccdf_org.altx_rule_discovery.http.cve.oval.xml_4" selected="true">
+          <cdf12:title xml:lang="en-US">Vulnerability: CVE-2017-7269: High-Severity Vulnerability in Microsoft IIS</cdf12:title>
+          <cdf12:platform idref="cpe:/o:undefined"></cdf12:platform>
+          <cdf12:ident system="http://cve.mitre.org">CVE-2017-7269</cdf12:ident>
+          <cdf12:ident system="https://cwe.mitre.org/data/definitions/119.html">СWE-119</cdf12:ident>
+          <cdf12:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+            <cdf12:check-content-ref href="discovery.http.cve.oval.xml" name="oval:com.altx.undefined.http.cve:def:2017726900000"></cdf12:check-content-ref>
+          </cdf12:check>
+        </cdf12:Rule>
+		   </cdf12:Group>
+	     </cdf12:Benchmark>
+  </component>
+  <component id="scap_org.altx_comp_oval4.xml" timestamp="2019-02-28T09:41:09.724-06:00"> 
+  <oval-def:oval_definitions>
+  <oval-def:generator>
+        <oval:product_name>jovalCM.com - JCA</oval:product_name>
+        <oval:product_version>0.1</oval:product_version>
+        <oval:schema_version>5.11.2</oval:schema_version>
+        <oval:timestamp>2019-02-28T15:41:07</oval:timestamp>
+      </oval-def:generator>
+    <oval-def:definitions>
+  <oval-def:definition id="oval:com.altx.undefined.http.cve:def:2010279100000" version="1" class="vulnerability" deprecated="false">
+          <oval-def:metadata>
+            <oval-def:title>CVE-2010-2791: Medium-Severity Vulnerability in Apache HTTP Server</oval-def:title>
+            <oval-def:affected family="undefined">
+              <oval-def:product>Apache HTTP Server</oval-def:product>
+            </oval-def:affected>
+            <oval-def:reference source="CVE" ref_id="CVE-2010-2791" ref_url="https://nvd.nist.gov/vuln/detail/CVE-2010-2791"></oval-def:reference>
+            <oval-def:reference source="CWE" ref_id="CWE-384" ref_url="https://cwe.mitre.org/data/definitions/200.html"></oval-def:reference>
+            <oval-def:description>mod_proxy in httpd in Apache HTTP Server 2.2.9, when running on Unix, does not close the backend connection if a timeout occurs when reading a response from a persistent connection, which allows remote attackers to obtain a potentially sensitive response intended for a different client in opportunistic circumstances via a normal HTTP request.</oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="OR" negate="false">
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" negate="false" comment="Apache HTTP server advertises version"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.altx.undefined.http.cve:tst:2010279100003" negate="false" comment="Apache HTTP server version is equal to 2.2.9"></oval-def:criterion>
+			 </oval-def:criteria>
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100001" negate="false" comment="HTTP server is Apache"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" negate="true" comment="Apache HTTP server advertises version"></oval-def:criterion>
+              <!--oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100004" negate="false" comment="Assessment requires authenticated scan"></oval-def:criterion-->
+            </oval-def:criteria>
+          </oval-def:criteria>
+		</oval-def:definition>
+		<oval-def:definition id="oval:com.altx.undefined.http.cve:def:2014358100000" version="1" class="vulnerability" deprecated="false">
+          <oval-def:metadata>
+            <oval-def:title>CVE-2014-3581: Medium-Severity Vulnerability in Apache HTTP Server</oval-def:title>
+            <oval-def:affected family="undefined">
+              <oval-def:product>Apache HTTP Server</oval-def:product>
+            </oval-def:affected>
+            <oval-def:reference source="CVE" ref_id="CVE-2014-3581" ref_url="https://nvd.nist.gov/vuln/detail/CVE-2014-3581"></oval-def:reference>
+            <oval-def:reference source="CWE" ref_id="CWE-399" ref_url="https://cwe.mitre.org/data/definitions/399.html"></oval-def:reference>
+            <oval-def:reference source="Vendor Advisory" ref_id="vulnerabilities_24" ref_url="https://httpd.apache.org/security/vulnerabilities_24.html"></oval-def:reference>
+            <oval-def:description>The cache_merge_headers_out function in modules/cache/cache_util.c in the mod_cache module in the Apache HTTP Server before 2.4.11 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an empty HTTP Content-Type header. </oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="OR" negate="false">
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" negate="false" comment="Apache HTTP server advertises version"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.altx.undefined.http.cve:tst:2014358100003" negate="false" comment="Apache HTTP server version is greater than or equal to 2.4.0 and is less than or equal to 2.4.10"></oval-def:criterion>
+            </oval-def:criteria>
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100001" negate="false" comment="HTTP server is Apache"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" negate="true" comment="Apache HTTP server advertises version"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100004" negate="false" comment="Assessment requires authenticated scan"></oval-def:criterion>
+            </oval-def:criteria>
+          </oval-def:criteria>
+		  
+        </oval-def:definition>
+		<oval-def:definition id="oval:com.altx.undefined.http.cve:def:2014352300000" version="1" class="vulnerability" deprecated="false">
+          <oval-def:metadata>
+            <oval-def:title>CVE-2014-3523: Medium-Severity Vulnerability in Apache HTTP Server</oval-def:title>
+            <oval-def:affected family="undefined">
+              <oval-def:product>Apache HTTP Server</oval-def:product>
+            </oval-def:affected>
+            <oval-def:reference source="CVE" ref_id="CVE-2014-3523" ref_url="https://nvd.nist.gov/vuln/detail/CVE-2014-3523"></oval-def:reference>
+            <oval-def:reference source="CWE" ref_id="CWE-399" ref_url="https://cwe.mitre.org/data/definitions/399.html"></oval-def:reference>
+            <oval-def:reference source="Vendor Advisory" ref_id="vulnerabilities_24" ref_url="https://httpd.apache.org/security/vulnerabilities_24.html"></oval-def:reference>
+            <oval-def:description>Memory leak in the winnt_accept function in server/mpm/winnt/child.c in the WinNT MPM in the Apache HTTP Server 2.4.x before 2.4.10 on Windows, when the default AcceptFilter is enabled, allows remote attackers to cause a denial of service (memory consumption) via crafted requests.</oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="OR" negate="false">
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" negate="false" comment="Apache HTTP server advertises version"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.altx.undefined.http.cve:tst:2014358100003" negate="false" comment="Apache HTTP server version is greater than or equal to 2.4.0 and is less than or equal to 2.4.9"></oval-def:criterion>
+            </oval-def:criteria>
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100001" negate="false" comment="HTTP server is Apache"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" negate="true" comment="Apache HTTP server advertises version"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100004" negate="false" comment="Assessment requires authenticated scan"></oval-def:criterion>
+            </oval-def:criteria>
+          </oval-def:criteria>
+		</oval-def:definition>
+		
+		<oval-def:definition id="oval:com.altx.undefined.http.cve:def:2017726900000" version="1" class="vulnerability" deprecated="false">
+          <oval-def:metadata>
+            <oval-def:title>CVE-2017-7269: High-Severity Vulnerability in Microsoft IIS</oval-def:title>
+            <oval-def:affected family="undefined">
+              <oval-def:product>Microsoft IIS</oval-def:product>
+            </oval-def:affected>
+            <oval-def:reference source="CVE" ref_id="CVE-2017-7269" ref_url="https://nvd.nist.gov/vuln/detail/CVE-2017-7269"></oval-def:reference>
+            <oval-def:reference source="CWE" ref_id="CWE-119" ref_url="https://cwe.mitre.org/data/definitions/19.html"></oval-def:reference>
+            <oval-def:description>Buffer overflow in the ScStoragePathFromUrl function in the WebDAV service in Internet Information Services (IIS) 6.0 in Microsoft Windows Server 2003 R2 allows remote attackers to execute arbitrary code via a long header beginning with If:  http://  in a PROPFIND request, as exploited in the wild in July or August 2016.</oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="OR" negate="false">
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002007100002" negate="false" comment="Microsoft IIS HTTP server advertises version"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.altx.undefined.http.cve:tst:2017726900003" negate="false" comment="Microsoft IIS HTTP server version is one of the 1 specified values"></oval-def:criterion>
+            </oval-def:criteria>
+            <oval-def:criteria operator="AND" negate="false">
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002007100001" negate="false" comment="HTTP server is Microsoft IIS"></oval-def:criterion>
+              <oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002007100002" negate="true" comment="Microsoft IIS HTTP server advertises version"></oval-def:criterion>
+              <!--oval-def:criterion test_ref="oval:com.jovalcm.undefined.http.cve:tst:2002006100004" negate="false" comment="Assessment requires authenticated scan"></oval-def:criterion-->
+            </oval-def:criteria>
+          </oval-def:criteria>
+        </oval-def:definition>
+      </oval-def:definitions>
+	  
+  <oval-def:tests>
+   	
+		<x-net-def:http_test id="oval:com.jovalcm.undefined.http.cve:tst:2002006100001" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="HTTP server is Apache" deprecated="false">
+          <x-net-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002006100002"></x-net-def:object>
+        </x-net-def:http_test>
+        <x-net-def:http_test id="oval:com.jovalcm.undefined.http.cve:tst:2002006100002" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Apache HTTP server advertises version" deprecated="false">
+          <x-net-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002006100003"></x-net-def:object>
+        </x-net-def:http_test>
+		
+		 <ind-def:variable_test id="oval:com.altx.undefined.http.cve:tst:2014358100003" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Apache HTTP server version is greater than or equal to 2.4.0 and is less than or equal to 2.4.10" deprecated="false">
+          <ind-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002006100004"></ind-def:object>
+          <ind-def:state state_ref="oval:com.jovalcm.undefined.http.cve:ste:2014358100003"></ind-def:state>
+		 </ind-def:variable_test>
+		<ind-def:variable_test id="oval:com.altx.undefined.http.cve:tst:2014352300003" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Apache HTTP server version is is one of the 8 specified values" deprecated="false">
+          <ind-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002006100004"></ind-def:object>
+          <ind-def:state state_ref="oval:com.jovalcm.undefined.http.cve:ste:2014352300003"></ind-def:state>
+		 </ind-def:variable_test>
+		 <ind-def:variable_test id="oval:com.altx.undefined.http.cve:tst:2017726900003" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Microsoft IIS HTTP server version is one of the 1 specified values" deprecated="false">
+          <ind-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002007100004"></ind-def:object>
+          <ind-def:state state_ref="oval:com.jovalcm.undefined.http.cve:ste:2002007100003"></ind-def:state>
+		  </ind-def:variable_test>
+		   <x-net-def:http_test id="oval:com.jovalcm.undefined.http.cve:tst:2002007100002" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Microsoft IIS HTTP server advertises version" deprecated="false">
+          <x-net-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002007100003"></x-net-def:object>
+        </x-net-def:http_test>
+		  
+    <ind-def:unknown_test id="oval:com.jovalcm.undefined.http.cve:tst:2002006100004" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Assessment requires authenticated scan" deprecated="false"></ind-def:unknown_test>
+	
+	<x-net-def:http_test id="oval:com.jovalcm.undefined.http.cve:tst:2002007100001" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="HTTP server is Microsoft IIS" deprecated="false">
+          <x-net-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002007100002"></x-net-def:object>
+        </x-net-def:http_test>
+	<ind-def:variable_test id="oval:com.altx.undefined.http.cve:tst:2010279100003" version="1" check_existence="at_least_one_exists" check="all" state_operator="AND" comment="Apache HTTP server version is equal to 2.2.9" deprecated="false">
+          <ind-def:object object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002006100004"></ind-def:object>
+		  <ind-def:state state_ref="oval:com.jovalcm.undefined.http.cve:ste:2017157150003"></ind-def:state>
+          <ind-def:state state_ref="oval:com.jovalcm.undefined.http.cve:ste:2010279100003"></ind-def:state>
+		 </ind-def:variable_test>
+  </oval-def:tests>
+  
+  <oval-def:objects>
+  
+		<x-net-def:http_object id="oval:com.jovalcm.undefined.http.cve:obj:2002006100001" version="1" comment="All HTTP servers" deprecated="false">
+          <x-net-def:behaviors follow_redirects="false"></x-net-def:behaviors>
+          <x-net-def:method datatype="string" operation="equals" mask="false">GET</x-net-def:method>
+          <x-net-def:path datatype="string" operation="equals" mask="false">/</x-net-def:path>
+          <x-net-def:request_headers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" datatype="record" operation="equals" mask="false" xsi:nil="true"></x-net-def:request_headers>
+          <x-net-def:post_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" datatype="string" operation="equals" mask="false" xsi:nil="true"></x-net-def:post_data>
+        </x-net-def:http_object>
+		
+   <x-net-def:http_object id="oval:com.jovalcm.undefined.http.cve:obj:2002006100002" version="1" comment="Apache HTTP server" deprecated="false">
+          <oval-def:set set_operator="UNION">
+            <oval-def:object_reference>oval:com.jovalcm.undefined.http.cve:obj:2002006100001</oval-def:object_reference>
+            <oval-def:filter action="include">oval:com.jovalcm.undefined.http.cve:ste:2002006100001</oval-def:filter>
+          </oval-def:set>
+    </x-net-def:http_object>
+				<x-net-def:http_object id="oval:com.jovalcm.undefined.http.cve:obj:2002006100003" version="1" comment="Apache HTTP server advertising version" deprecated="false">
+          <oval-def:set set_operator="UNION">
+            <oval-def:object_reference>oval:com.jovalcm.undefined.http.cve:obj:2002006100001</oval-def:object_reference>
+            <oval-def:filter action="include">oval:com.jovalcm.undefined.http.cve:ste:2002006100002</oval-def:filter>
+          </oval-def:set>
+		  </x-net-def:http_object>
+	<ind-def:variable_object id="oval:com.jovalcm.undefined.http.cve:obj:2002006100004" version="1" comment="The advertised Apache HTTP server version string" deprecated="false">
+          <ind-def:var_ref datatype="string" operation="equals" mask="false">oval:com.jovalcm.undefined.http.cve:var:2002006100001</ind-def:var_ref>
+        </ind-def:variable_object>
+		
+		<x-net-def:http_object id="oval:com.jovalcm.undefined.http.cve:obj:2002007100002" version="1" comment="Microsoft IIS HTTP server" deprecated="false">
+          <oval-def:set set_operator="UNION">
+            <oval-def:object_reference>oval:com.jovalcm.undefined.http.cve:obj:2002006100001</oval-def:object_reference>
+            <oval-def:filter action="include">oval:com.jovalcm.undefined.http.cve:ste:2002007100001</oval-def:filter>
+          </oval-def:set>
+        </x-net-def:http_object>
+		 <ind-def:variable_object id="oval:com.jovalcm.undefined.http.cve:obj:2002007100004" version="1" comment="The advertised Microsoft IIS HTTP server version string" deprecated="false">
+          <ind-def:var_ref datatype="string" operation="equals" mask="false">oval:com.jovalcm.undefined.http.cve:var:2002007100001</ind-def:var_ref>
+        </ind-def:variable_object>
+		<x-net-def:http_object id="oval:com.jovalcm.undefined.http.cve:obj:2002007100003" version="1" comment="Microsoft IIS HTTP server advertising version" deprecated="false">
+          <oval-def:set set_operator="UNION">
+            <oval-def:object_reference>oval:com.jovalcm.undefined.http.cve:obj:2002006100001</oval-def:object_reference>
+            <oval-def:filter action="include">oval:com.jovalcm.undefined.http.cve:ste:2002007100002</oval-def:filter>
+          </oval-def:set>
+		   </x-net-def:http_object>
+  </oval-def:objects>
+  
+  <oval-def:states>
+   <ind-def:variable_state id="oval:com.jovalcm.undefined.http.cve:ste:2010279100003" version="1" operator="AND" comment="Version is 2.2.9" deprecated="false">
+          <ind-def:value entity_check="all" check_existence="at_least_one_exists" datatype="version" operation="equals" mask="false">2.2.9</ind-def:value>
+    	</ind-def:variable_state>
+		 <ind-def:variable_state id="oval:com.jovalcm.undefined.http.cve:ste:2017157150003" version="1" operator="AND" comment="Version is greater than or equal to 2.4.0" deprecated="false">
+          <ind-def:value entity_check="all" check_existence="at_least_one_exists" datatype="version" operation="greater than or equal" mask="false">2.4.0</ind-def:value>
+        </ind-def:variable_state>
+		 <x-net-def:http_state id="oval:com.jovalcm.undefined.http.cve:ste:2002006100001" version="1" operator="AND" comment="Apache HTTP server" deprecated="false">
+          <x-net-def:response_headers entity_check="all" check_existence="at_least_one_exists" datatype="record" operation="equals" mask="false">
+            <oval-def:field name="server" entity_check="all" datatype="string" operation="pattern match" mask="false">^\s*Apache\b</oval-def:field>
+          </x-net-def:response_headers>
+        </x-net-def:http_state>
+		  <ind-def:variable_state id="oval:com.jovalcm.undefined.http.cve:ste:2002007100003" version="1" operator="AND" comment="Version is one of the 2 specified values" deprecated="false">
+          <ind-def:value entity_check="all" check_existence="at_least_one_exists" datatype="string" operation="equals" mask="false" var_ref="oval:com.jovalcm.undefined.http.cve:var:2002007100002" var_check="at least one"></ind-def:value>
+        </ind-def:variable_state>
+		
+        <x-net-def:http_state id="oval:com.jovalcm.undefined.http.cve:ste:2002006100002" version="1" operator="AND" comment="Apache HTTP server version" deprecated="false">
+          <x-net-def:response_headers entity_check="all" check_existence="at_least_one_exists" datatype="record" operation="equals" mask="false">
+            <oval-def:field name="server" entity_check="all" datatype="string" operation="pattern match" mask="false">Apache/([0-9.-]+)</oval-def:field>
+          </x-net-def:response_headers>
+        </x-net-def:http_state>
+		<x-net-def:http_state id="oval:com.jovalcm.undefined.http.cve:ste:2002007100001" version="1" operator="AND" comment="Microsoft IIS HTTP server" deprecated="false">
+          <x-net-def:response_headers entity_check="all" check_existence="at_least_one_exists" datatype="record" operation="equals" mask="false">
+            <oval-def:field name="server" entity_check="all" datatype="string" operation="pattern match" mask="false">^\s*Microsoft-IIS\b</oval-def:field>
+          </x-net-def:response_headers>
+        </x-net-def:http_state>
+		<x-net-def:http_state id="oval:com.jovalcm.undefined.http.cve:ste:2002007100002" version="1" operator="AND" comment="Microsoft IIS HTTP server version" deprecated="false">
+          <x-net-def:response_headers entity_check="all" check_existence="at_least_one_exists" datatype="record" operation="equals" mask="false">
+            <oval-def:field name="server" entity_check="all" datatype="string" operation="pattern match" mask="false">Microsoft-IIS/([0-9.]+)</oval-def:field>
+          </x-net-def:response_headers>
+        </x-net-def:http_state>
+		
+		<ind-def:variable_state id="oval:com.jovalcm.undefined.http.cve:ste:2014358100003" version="1" operator="AND" comment="Version is less than or equal to 2.4.10" deprecated="false">
+          <ind-def:value entity_check="all" check_existence="at_least_one_exists" datatype="version" operation="less than or equal" mask="false">2.4.10</ind-def:value>
+        </ind-def:variable_state>
+		<ind-def:variable_state id="oval:com.jovalcm.undefined.http.cve:ste:2014352300003" version="1" operator="AND" comment="Version is one of the 8 specified values" deprecated="false">
+          <ind-def:value entity_check="all" check_existence="at_least_one_exists" datatype="string" operation="equals" mask="false" var_ref="oval:com.altx.undefined.http.cve:var:2014352300005" var_check="at least one"></ind-def:value>
+        </ind-def:variable_state>
+		<ind-def:variable_state id="oval:com.jovalcm.undefined.http.cve:ste:2017726900003" version="1" operator="AND" comment="Version is one of the 1 specified values" deprecated="false">
+          <ind-def:value entity_check="all" check_existence="at_least_one_exists" datatype="string" operation="equals" mask="false" var_ref="oval:com.altx.undefined.http.cve:var:2017726900002" var_check="at least one"></ind-def:value>
+        </ind-def:variable_state>
+  </oval-def:states>
+  <oval-def:variables>
+		<oval-def:local_variable id="oval:com.jovalcm.undefined.http.cve:var:2002006100001" version="1" datatype="string" comment="The advertised Apache HTTP server version string" deprecated="false">
+          <oval-def:regex_capture pattern="Apache/([0-9.-]+)">
+            <oval-def:object_component object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002006100003" item_field="response_headers" record_field="server"></oval-def:object_component>
+          </oval-def:regex_capture>
+        </oval-def:local_variable>
+		<oval-def:local_variable id="oval:com.jovalcm.undefined.http.cve:var:2002007100001" version="1" datatype="string" comment="The advertised Microsoft IIS HTTP server version string" deprecated="false">
+          <oval-def:regex_capture pattern="Microsoft-IIS/([0-9.]+)">
+            <oval-def:object_component object_ref="oval:com.jovalcm.undefined.http.cve:obj:2002007100003" item_field="response_headers" record_field="server"></oval-def:object_component>
+          </oval-def:regex_capture>
+        </oval-def:local_variable>
+     <oval-def:constant_variable id="oval:com.altx.undefined.http.cve:var:2014352300005" version="1" datatype="string" comment="Affected Apache HTTP server versions" deprecated="false">
+          <oval-def:value>2.4.1</oval-def:value>
+          <oval-def:value>2.4.2</oval-def:value>
+          <oval-def:value>2.4.3</oval-def:value>
+          <oval-def:value>2.4.4</oval-def:value>
+          <oval-def:value>2.4.6</oval-def:value>
+          <oval-def:value>2.4.7</oval-def:value>
+		  <oval-def:value>2.4.8</oval-def:value>
+          <oval-def:value>2.4.9</oval-def:value>
+        </oval-def:constant_variable>
+		<oval-def:constant_variable id="oval:com.altx.undefined.http.cve:var:2017726900002" version="1" datatype="string" comment="Affected Microsoft IIS HTTP server versions" deprecated="false">
+          <oval-def:value>6.0</oval-def:value>
+        </oval-def:constant_variable>
+		 <oval-def:constant_variable id="oval:com.jovalcm.undefined.http.cve:var:2002007100002" version="1" datatype="string" comment="Affected Microsoft IIS HTTP server versions" deprecated="false">
+          <oval-def:value>4.0</oval-def:value>
+          <oval-def:value>5.0</oval-def:value>
+        </oval-def:constant_variable>
+  </oval-def:variables>
+</oval-def:oval_definitions>
+</component>
+
+  <component id="scap_org.joval_comp_generator-cpe-dictionary.xml" timestamp="2019-02-28T09:41:09.724-06:00">
+    <cpe-dict:cpe-list>
+    <cpe-dict:cpe-item name="cpe:/o:microsoft:windows">
+        <cpe-dict:references>
+          <cpe-dict:reference href="family">windows</cpe-dict:reference>
+        </cpe-dict:references>
+        <cpe-dict:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="generator-cpe-oval.xml">oval:org.joval.inventory.windows:def:1</cpe-dict:check>
+      </cpe-dict:cpe-item>
+	  <cpe-dict:cpe-item name="cpe:/o:undefined">
+        <cpe-dict:references>
+          <cpe-dict:reference href="family">undefined</cpe-dict:reference>
+        </cpe-dict:references>
+        <cpe-dict:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="generator-cpe-oval.xml">oval:org.joval.inventory.undefined:def:1</cpe-dict:check>
+      </cpe-dict:cpe-item>
+	      <cpe-dict:cpe-item name="cpe:/o:unix">
+        <cpe-dict:references>
+          <cpe-dict:reference href="family">unix</cpe-dict:reference>
+        </cpe-dict:references>
+        <cpe-dict:check system="http://oval.mitre.org/XMLSchema/oval-definitions-5" href="generator-cpe-oval.xml">oval:org.joval.inventory.unix:def:1</cpe-dict:check>
+      </cpe-dict:cpe-item>
+    </cpe-dict:cpe-list>
+	 </component>
+	 <component id="scap_org.joval_comp_generator-cpe-oval.xml" timestamp="2019-02-28T09:41:09.724-06:00">
+    <oval-def:oval_definitions>
+      <oval-def:generator>
+        <oval:product_name>jovalCM</oval:product_name>
+        <oval:product_version>6.1.0 (Engineering Build v6460773c)</oval:product_version>
+        <oval:schema_version>5.11.2</oval:schema_version>
+        <oval:timestamp>2018-10-17T22:26:29Z</oval:timestamp>
+      </oval-def:generator>
+      <oval-def:definitions>
+        <oval-def:definition id="oval:org.joval.inventory.windows:def:1" version="1" class="inventory">
+          <oval-def:metadata>
+            <oval-def:title>windows family</oval-def:title>
+            <oval-def:affected family="windows"></oval-def:affected>
+            <oval-def:reference source="CPE" ref_id="cpe:/o:microsoft:windows"></oval-def:reference>
+            <oval-def:description>The target system is part of the windows family.</oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="AND" negate="false">
+            <oval-def:criterion test_ref="oval:org.joval.inventory.windows:tst:1" negate="false" comment="windows family"></oval-def:criterion>
+          </oval-def:criteria>
+        </oval-def:definition>
+		  <oval-def:definition id="oval:org.joval.inventory.undefined:def:1" version="1" class="inventory">
+          <oval-def:metadata>
+            <oval-def:title>undefined family</oval-def:title>
+            <oval-def:affected family="undefined"></oval-def:affected>
+            <oval-def:reference source="CPE" ref_id="cpe:/o:undefined"></oval-def:reference>
+            <oval-def:description>The target system is part of the undefined family.</oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="AND" negate="false">
+            <oval-def:criterion test_ref="oval:org.joval.inventory.undefined:tst:1" negate="false" comment="undefined family"></oval-def:criterion>
+          </oval-def:criteria>
+        </oval-def:definition>
+		<oval-def:definition id="oval:org.joval.inventory.unix:def:1" version="1" class="inventory">
+          <oval-def:metadata>
+            <oval-def:title>unix family</oval-def:title>
+            <oval-def:affected family="unix"></oval-def:affected>
+            <oval-def:reference source="CPE" ref_id="cpe:/o:unix"></oval-def:reference>
+            <oval-def:description>The target system is part of the unix family.</oval-def:description>
+          </oval-def:metadata>
+          <oval-def:criteria operator="AND" negate="false">
+            <oval-def:criterion test_ref="oval:org.joval.inventory.unix:tst:1" negate="false" comment="unix family"></oval-def:criterion>
+          </oval-def:criteria>
+        </oval-def:definition>
+      </oval-def:definitions>
+	   <oval-def:tests>
+	   <ind-def:family_test id="oval:org.joval.inventory.windows:tst:1" version="1" check="all" comment="windows family">
+          <ind-def:object object_ref="oval:org.joval.inventory:obj:1"></ind-def:object>
+          <ind-def:state state_ref="oval:org.joval.inventory.windows:ste:1"></ind-def:state>
+        </ind-def:family_test>
+		<ind-def:family_test id="oval:org.joval.inventory.undefined:tst:1" version="1" check="all" comment="undefined family">
+          <ind-def:object object_ref="oval:org.joval.inventory:obj:1"></ind-def:object>
+          <ind-def:state state_ref="oval:org.joval.inventory.undefined:ste:1"></ind-def:state>
+        </ind-def:family_test>
+		<ind-def:family_test id="oval:org.joval.inventory.unix:tst:1" version="1" check="all" comment="unix family">
+          <ind-def:object object_ref="oval:org.joval.inventory:obj:1"></ind-def:object>
+          <ind-def:state state_ref="oval:org.joval.inventory.unix:ste:1"></ind-def:state>
+        </ind-def:family_test>
+      </oval-def:tests>
+      <oval-def:objects>
+        <ind-def:family_object id="oval:org.joval.inventory:obj:1" version="1" comment="This is the default family object."></ind-def:family_object>
+      </oval-def:objects>
+      <oval-def:states>
+	  <ind-def:family_state id="oval:org.joval.inventory.windows:ste:1" version="1" comment="windows family">
+          <ind-def:family check_existence="at_least_one_exists">windows</ind-def:family>
+        </ind-def:family_state>
+		 <ind-def:family_state id="oval:org.joval.inventory.undefined:ste:1" version="1" comment="undefined family">
+          <ind-def:family check_existence="at_least_one_exists">undefined</ind-def:family>
+        </ind-def:family_state>
+		<ind-def:family_state id="oval:org.joval.inventory.unix:ste:1" version="1" comment="unix family">
+          <ind-def:family check_existence="at_least_one_exists">unix</ind-def:family>
+        </ind-def:family_state>
+      </oval-def:states>
+    </oval-def:oval_definitions>
+  </component>
+	  
+    </data-stream-collection>
